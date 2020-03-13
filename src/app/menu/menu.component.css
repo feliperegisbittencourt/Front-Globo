@@ -1,0 +1,92 @@
+.toolbar {
+    height: 100px;
+    margin: -8px;
+    display: flex;
+    align-items: center;
+    background-color: #f1f1f1;
+    color: white;
+    font-weight: 600;
+    box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05);
+  }
+
+.spacer{
+    flex: 1;
+}
+
+.side-menu{
+    background: linear-gradient(90deg, #e54f47 0%, #f5721a 100%);
+    border: 0;
+    border-radius: 10px;
+    margin-left: 5%;
+}
+
+.include{
+    background: #d83367;
+    display: flex;
+    color: #ffffff;
+    padding: 10px;
+    border-radius: 6px;
+    margin: 0% 0.5%;
+}
+
+
+.busca{
+    display: flex;
+    margin:0% 2%;
+}
+
+a{
+    margin-left: 0%;
+}
+
+.icon{
+    color: #ffffff;
+}
+
+.size{
+    display:flex;
+    width: 140px;
+}
+
+.retang{
+    margin: 10px 20px;
+}
+
+.square{
+    margin: 10px;
+}
+
+.security{
+    background: #ffffff;
+    border: 0;
+    border-radius: 6px;
+    margin-left: 2%;
+}
+
+.right-menu{
+    background: #ffffff;
+    border: 0;
+    border-radius: 6px;
+}
+.b-icon{
+    margin: 10px;
+    color: #000000;
+}
+
+.user{
+    background: linear-gradient(90deg, #e54f47 0%, #f5721a 100%);
+    border: 0;
+    border-radius: 6px;
+}
+
+.white{
+    margin-left: 2%;
+    background: #ffffff;
+    border-radius: 6px;
+    display: flex;
+}
+
+.nobut{
+    display: flex;
+    margin-right: 5%;
+}
