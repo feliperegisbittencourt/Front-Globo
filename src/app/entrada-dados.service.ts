@@ -7,6 +7,7 @@ import { tap, map, toArray } from 'rxjs/operators';
   providedIn: 'root'
 })
 export class EntradaDadosService {
+  sidenav: boolean = false;
 
   constructor(private http: HttpClient) { }
 
@@ -18,6 +19,16 @@ export class EntradaDadosService {
       map((x: any) => x.body.data.users as User[]),
     );
   }
+
+  setSidenav(){
+    this.sidenav != this.sidenav;
+  }
+
+  getSidenav(){
+    return this.sidenav;
+  }
+
+
 }
 
 export interface User{

@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { EntradaDadosService } from '../entrada-dados.service';
+import { SidenavService } from '../sidenav.service';
 
 @Component({
   selector: 'app-menu',
@@ -7,9 +9,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MenuComponent implements OnInit {
 
-  constructor() { }
+  constructor(private sidenavService: SidenavService) { }
 
   ngOnInit() {
   }
 
+  openSide(){
+    this.sidenavService.toggle();
+  }
 }

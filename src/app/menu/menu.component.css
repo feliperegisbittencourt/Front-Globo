@@ -80,7 +80,7 @@ a{
 }
 
 .white{
-    margin-left: 2%;
+    /*margin-left: 2%;*/
     background: #ffffff;
     border-radius: 6px;
     display: flex;

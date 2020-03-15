@@ -4,3 +4,10 @@ body{
     margin: 0;
     overflow-x: hidden;
 }
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+svg:not(:root).svg-inline--fa {
+    overflow: visible;
+    vertical-align: middle;
+}

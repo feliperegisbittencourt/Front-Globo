@@ -8,7 +8,7 @@
             <th>DATA DE ALTERAÇÃO</th>
             <th>REGRAS</th>
             <th>STATUS</th>
-            <th>AÇÕES</th>
+            <th class="right">AÇÕES</th>
         </tr>
         <!--<div *ngFor="let user of qtdCadast, let i = index">-->
             <!--<div *ngIf="par">-->
@@ -20,7 +20,7 @@
                     <td> {{qtdCadast[i].change_date}}</td>
                     <td> {{qtdCadast[i].rules}}</td>
                     <td class="active" [ngStyle]="{'color': colorActive$[i]}"> {{qtdCadast[i].status}}</td>
-                    <td class="action"> <div class="hv_div" *ngIf="hov$[i]"> <fa-icon icon="trash-alt" class="icon"></fa-icon><fa-icon icon="download"></fa-icon><fa-icon icon="shield-alt"></fa-icon><fa-icon icon="pencil-alt"></fa-icon></div><fa-icon icon="ellipsis-h"></fa-icon></td>
+                    <td class="action"> <div class="hv_div" *ngIf="hov$[i]"> <fa-icon icon="trash-alt" class="icon"></fa-icon><fa-icon icon="download" class="icon"></fa-icon><fa-icon icon="shield-alt" class="icon"></fa-icon><fa-icon icon="pencil-alt" class="icon"></fa-icon></div><div class="spacer"></div><div class="right"><fa-icon icon="ellipsis-h"></fa-icon></div></td>
                 </tr>
             <!--</div>
         </div>-->

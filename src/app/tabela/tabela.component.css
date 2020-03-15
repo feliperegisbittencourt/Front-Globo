@@ -34,7 +34,7 @@ body{
 }
 
 tr{
-    height: 60px;
+    height: 40px;
     background-color:#DCDCDC;
     border-bottom: 0;
 }
@@ -47,7 +47,7 @@ td,th{
 }
 
 td.action{
-    /*padding-left: 200px;*/
+    /*padding-left: 40%;*/
     display: flex;
     text-align: right;
 }
@@ -61,8 +61,18 @@ tr.hv:hover{
 .hv_div{
     display: flex;
     color: black;
+    float: left;
 }
 
 .icon{
-    margin: 0.5% 0.5%;
+    margin-right: 10%;
+}
+
+.right{
+    float: right;
+    margin-right: 30px;
+}
+
+.spacer{
+    flex: 1;
 }

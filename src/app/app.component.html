@@ -295,11 +295,71 @@
   }
 </style>
 
-<div class="site">
+<!--<div class="site">
   <app-menu></app-menu>
   <div class="site-content">
     <app-tabela></app-tabela>
     <app-buttons></app-buttons>
   </div>
   <app-footer></app-footer>
-</div>
+</div>-->
+
+<mat-sidenav-container class="example-container">
+  <mat-sidenav #sidenav mode="side" position="end" [(opened)]="opened$">
+    <div class="head">
+      <div class="left">
+        <fa-icon icon="sliders-h"></fa-icon>
+        <p>FILTROS</p>
+      </div>
+      <div class="spacer"></div>
+      <div class="right">
+        <button class="close" (click)="sidenav.toggle()">X</button>
+      </div>
+    </div>
+    <div class="text">
+      <p>Utilize os filtros abaixo para refinar os resultados da tabela, clique no botão APLICAR para salvar as alterações.</p>
+    </div>
+    <svg height="50" width="20%">
+        <line x1="0" y1="25" x2="20%" y2="25" style="stroke:rgba(31, 32, 65, 0.1);" />
+    </svg>
+    <div class="filter">
+      <div class="line">
+        <fa-icon icon="calendar-minus"></fa-icon>
+        <p>TODAS AS DATAS DE INCLUSÃO</p>  
+      </div>
+      <svg height="50" width="90%">
+          <line x1="0" y1="25" x2="90%" y2="25" style="stroke:rgba(31, 32, 65, 0.1);" />
+      </svg>
+      <div class="line">
+        <fa-icon icon="calendar-minus"></fa-icon>
+        <p>TODAS AS DATAS DE ALTERAÇÃO</p>
+      </div>
+      <svg height="50" width="90%">
+          <line x1="0" y1="25" x2="90%" y2="25" style="stroke:rgba(31, 32, 65, 0.1);" />
+      </svg>
+      <div class="line">
+        <fa-icon icon="circle" class="circle"></fa-icon>
+        <fa-icon icon="circle-notch" class="circle"></fa-icon>
+        <p>ATIVOS E INATIVOS</p>
+      </div>
+      <svg height="50" width="90%">
+          <line x1="0" y1="25" x2="90%" y2="25" style="stroke:rgba(31, 32, 65, 0.1);" />
+      </svg>
+    </div>
+    <div class="bt">
+      <button class="aplicar">APLICAR</button>
+    </div>
+  </mat-sidenav>
+
+  <mat-sidenav-content>
+    <div class="site">
+      <app-menu></app-menu>
+      <div class="site-content">
+        <app-tabela></app-tabela>
+        <app-buttons></app-buttons>
+      </div>
+      
+    </div>        
+  </mat-sidenav-content>
+</mat-sidenav-container>
+<app-footer></app-footer>
