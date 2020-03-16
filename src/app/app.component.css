@@ -29,7 +29,7 @@
   }
 
   .example-container{
-    height: 95.5%;
+    height: calc(100% - 30px);
   }
 
   svg{
