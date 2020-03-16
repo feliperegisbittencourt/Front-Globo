@@ -36,16 +36,16 @@ export class TabelaComponent implements OnInit {
           if(this.index %2 ==0){
             this.par$ = true;
             this.impar$ = false;
-            console.log(this.index,  ">>>" , this.par$);
+            //console.log(this.index,  ">>>" , this.par$);
           }else{
             this.par$ = false;
             this.impar$ = true;
-            console.log(this.index, ">>>", this.par$);
+            //console.log(this.index, ">>>", this.par$);
           }
           
 
           this.qtdCadast[this.index] = DataSet.data[this.index];
-          console.log(this.qtdCadast[this.index].user);
+          //console.log(this.qtdCadast[this.index].user);
           this.index ++;
         });
       }
